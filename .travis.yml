@@ -1,13 +1,21 @@
 sudo: false
 language: node_js
 node_js:
-  - stable
-  - 4
+- stable
+- 4
 install:
-  - npm prune
-  - npm update
+- npm prune
+- npm update
 after_success:
-  - npm run coveralls
+- npm run coveralls
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  provider: npm
+  email: dominic@dbarnes.info
+  api_key:
+    secure: DveNwOuSQ2PPOgLUQPfSvXKkugxYRA76sAAnFAV3PkmzB/7x/zMsCvdtsKuDq2MJE+4yHxkXJgSq+ouG6D/q7rPWky271S0VaIx9sAdn2ZiySEDgD9Ou11YU06iyfgexebsdF12y94lsXT4vL79domhHYgHfdSX4E8kMCxwc8dyZ08SpIzM9eCXbhUMtfQ8oxn+F6Z+FZOPu/D5aKcRWAY4F8dcE1rqluzOr7sPO1+zC8Zs1a+qIPxV4LlGX8QlZmV4luiKBBBufYTeahikOg61dgQ7GQ8sjHPAfUV4D71T8Cr10CfMK5f1Q0sUd7uNPBm/L/xcjGNr4PNMtSNHKT5dmVCKvJUe121Kr8zh2VvnQrLgHIgdIwAxKgxpYzFoqVkW86oyXtm+gxl8S6qjEBcnZlMrMDgwnxHUERRfS7wRkjIPR8deh74FsT+Rxk6mkp1YGJYasd4l300UEkXolH0A3e60I75g3vQDRczft4vrQ/kHsfEjjnYILiUCmy7pVI0a7GEQCvztqbztDc1+Oedq5Y8NV13TAiWfopbDIXAvwtAEX5Rz7PSDZA2I1z024fCoJpTOExO/QtIt2YsXmAC02bsU4WVjGcaiwnv5J7Qt5Cnbi2vJM3CIZ7h+9bqR5VUwJl0gmvz+RAipFDg430RUXux7crwTKl6qB5OT/cgA=
+  on:
+    tags: true
+    repo: makojs/static-site
