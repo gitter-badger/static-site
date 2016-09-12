@@ -14,6 +14,7 @@
     "mako": "^0.13.0"
   },
   "dependencies": {
+    "clone": "^1.0.2",
     "mako-browser": "^0.18.1",
     "mako-buffer": "^0.12.0",
     "mako-output": "^0.12.0",
