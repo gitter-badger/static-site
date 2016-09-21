@@ -1,4 +1,12 @@
 
+0.1.0 / 2016-09-21
+==================
+
+  * chore(package): update mako deps
+  * meta: use npm version for releases
+  * docs: clean up readme
+  * docs: add contribution guide
+
 0.0.4 / 2016-09-18
 ==================
 
