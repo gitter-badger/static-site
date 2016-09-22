@@ -1,5 +1,7 @@
 # mako-static-site
 
+[![Join the chat at https://gitter.im/makojs/static-site](https://badges.gitter.im/makojs/static-site.svg)](https://gitter.im/makojs/static-site?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > A [mako][mako] plugin bundle for building static sites.
 
 [![npm version][npm-badge]][npm]
